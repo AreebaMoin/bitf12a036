@@ -1,0 +1,40 @@
+﻿@model List<Deliverable_2.Models.Bridal>
+    <!DOCTYPE html>
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+
+}
+<form method="post" action="Cart/Add_to_cart">
+    <div class="row">
+
+        @foreach (var l in Model)
+        {
+
+            <div class="col-md-4" style="margin-top:50px">
+
+                <img src="~/images/@l.Path" height="450" width="400" /><br />
+
+            </div>
+
+        }
+    </div>
+    <div class="=row">
+        <center>
+            @foreach (var l in Model)
+            {
+                <div class="col-md-4">
+                    <label style="color:black">@l.Name </label><br />
+                    <label style="color:black">@l.Price</label><br />
+                    <label style="color:black">@l.Size</label><br />
+                    <button id="1" type="submit" class="btn btn-info">Buy Now</button>
+                </div>
+            }
+        </center>
+
+
+    </div>
+</form>
+
+      
+
+

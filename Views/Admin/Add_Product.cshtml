@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = "~/Views/Shared/_LayoutPage2.cshtml";
+}
+<article class="col-1">
+    <center>
+
+        <p style="margin-top:10%" >Add Dress</></p><br /> <br /></center>
+
+        <div id="leftblockonePan" align="center" style="text-align:left">
+
+            <form method="post" action="/Admin/Adddishafter" enctype="multipart/form-data">
+                <center>
+                    <table style="margin-top:30px">
+                        <tr>
+                            <td><h3>Name of dress: </h3></td>
+                            <td>
+                                <input type="text" id="name" name="name" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3>Size of dress: </h3></td>
+                            <td>
+                                <input type="text" id="size" name="size" />
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><h3>Price: </h3> </td>
+                            <td> <input type="text" id="price" name="price" /></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Category: </h3> </td>
+                            <td>
+                                <select id="category" name="category">
+                                    <option value="PartyDress">PartyDress</option>
+                                    <option value="Bridal">Bridal</option>
+                                    <option value="Pant">Pant</option>
+                                    <option value="Top">Top</option>
+                                    <option value="Kurta">Kurta</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr><td><h3>Image of Dress: </h3>  <input type="file" id="FileName" name="FileName" /></td></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr><td><input type="submit" value="Proceed" /></td></tr>
+                    </table>
+                </center>
+            </form>
+           
+
+        </div>
+   
+</article>
+
+

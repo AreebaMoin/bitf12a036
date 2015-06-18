@@ -1,0 +1,78 @@
+﻿
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ 
+    <link href="~/bootstrap.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <title></title>
+    <link href="~/bootstrap.css" rel="stylesheet" />
+    <script src="~/bootstrap.js"></script>
+</head>
+<body>
+
+    <div class="row">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="#">Online Girls Dress Store</a>
+            </div>
+            <div>
+
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="~/Home/Index">Home</a></li>
+                    <li><a href="~/Admin/Index">Admin Dashboard</a></li>
+                    <li><a href="~/Home/About">About</a></li>
+                    <li><a href="~/User/SignUp">Register</a></li>
+                    <li><a href="~/User/Login">Login</a></li>
+                    <li><a href="~/Home/Contact">Contact Us</a></li>
+                    <li><a href="~/Cart/Index">My Cart</a></li>
+                    <li><a href="~/User/Logout">Logout</a></li>
+
+
+                </ul>
+            </div>
+            <div>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Search Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+
+                           
+                                <li> <a href="~/Catagories/Index">Party wear Dress</a></li>
+                                <li> <a href="~/Catagories/Bridal">Bridal Dress</a></li>
+                                <li> <a href="~/Catagories/Kurta"> Kurtas & Shalwar Kameez</a></li>
+                                <li> <a href="~/Catagories/Top"> Tops </a></li>
+                                <li> <a href="~/Catagories/Pant"> Pants & Tights </a></li>
+
+                            
+                        </ul>
+                    </li>
+                    </ul>
+            </div>
+
+
+        </nav>
+
+
+
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="nav navbar-fixed-bottom" style='background-color: #000000;'>
+        <h6>All rights reserved</h6>
+    </footer>
+
+</body>
+</html>

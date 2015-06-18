@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <title></title>
+    <link href="~/bootstrap.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="~/bootstrap.js"></script>
+   <style>
+       p{
+           color:lightskyblue;
+           font-family:'Times New Roman';
+           font-size:36px;
+           margin-top:100px;
+       }
+       th {
+           background-color:lightskyblue;
+           color: Black;
+           font-size:30px;
+       }
+       
+       table{
+           font-family:'Book Antiqua';
+           font-size:150%;
+           width:80%;
+
+
+       }
+   </style>
+</head>
+<body>
+
+    <div class="row">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+
+            <div>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown" style="margin-left:50px">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Orders <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Admin/ViewOrders">View Orders</a></li>
+                            <li><a href="~/Admin/ViewOrders">Remove Orders</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="~/Admin/Products">Products</a></li>
+                            <li><a href="~/Admin/Add_product">Add Product</a></li>
+                            <li><a href="~/Admin/Delete_Product">Delete Product</a></li>
+                            <li><a href="~/Admin/Update_Product">Update Product</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Customer <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Administrator</a></li>
+                            <li><a href="#">View Customer</a></li>
+                            <li><a href="#">Delete Customer</a></li>
+                            <li><a href="#">Update Customer</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="~/Cart/Index">Logout</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+
+
+
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="nav navbar-fixed-bottom" style='background-color: #000000;'>
+        <h6>All rights reserved</h6>
+    </footer>
+
+</body>
+</html>

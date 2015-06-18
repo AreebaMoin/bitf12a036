@@ -1,0 +1,38 @@
+﻿@model List<Deliverable_2.Models.Pant>
+<!DOCTYPE html>
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<div class="row">
+    <center>
+
+        @foreach (var l in Model)
+        {
+
+            <div class="col-md-3" style="margin-top:50px">
+
+                <img src="~/images/@l.Path" height="450" width="300" /><br />
+
+            </div>
+        }
+    </center>
+</div>
+<div class="=row">
+    <center>
+        @foreach (var l in Model)
+        {
+            <div class="col-md-3">
+                <label style="color:black">@l.Name </label><br />
+                <label style="color:black">@l.Price</label><br />
+                <label style="color:black">@l.Size</label><br />
+                <a href="~/User/Login">Buy Now!</a>
+            </div>
+        }
+    </center>
+
+
+</div>
+
+
+
+
